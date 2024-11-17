@@ -1,0 +1,15 @@
+\begin{table}
+\caption{caption}
+\begin{tabular}{r|cccccc}
+{} & {} & {CIFAR10} & {DTD} & {STL10} & {SVHN} & {FGVCAircraft} & {cub} \\
+{Method} & {Model} & {} & {} & {} & {} & {} & {} \\
+\midrule  \multirow[c]{6}{*}{NoKD} & Swin & 97.67 & \underline{66.70} & \bfseries \underline{99.60} & 56.70 & 18.33 & 53.64 \\
+ & ViT & 96.90 & 57.39 & 99.40 & 50.14 & 14.85 & \underline{54.80} \\
+ & DINOv2 & \bfseries \underline{98.57} & \bfseries \underline{73.14} & 99.45 & 57.30 & \bfseries \underline{30.60} & \bfseries \underline{65.62} \\
+ & BEiT & \underline{97.89} & 65.43 & \bfseries \underline{99.60} & 62.00 & \underline{19.14} & 14.48 \\
+ & PVTv2 & 88.07 & 33.46 & 94.74 & 0.00 & 7.98 & 16.97 \\
+ & resnet18 & 76.76 & 0.00 & 87.19 & 54.66 & 0.00 & 9.82 \\
+\midrule  \multirow[c]{2}{*}{NLL} & resnet18 & 95.15 & 29.57 & 94.77 & \underline{65.43} & 13.14 & 9.61 \\
+ & PVTv2 & 94.79 & 40.37 & 96.41 & \bfseries \underline{72.18} & 15.93 & 25.16 \\
+\end{tabular}
+\end{table}
